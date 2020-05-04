@@ -1,0 +1,9 @@
+.profile-img {
+    border: 5px rgb(255, 113, 136) solid;
+    border-radius: 50%;
+}
+
+.main-con {
+    display: flex;
+    flex-direction: column;
+}
