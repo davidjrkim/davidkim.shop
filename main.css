@@ -1,33 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li,
+nav li a,
+header a {
+    color: white;
+    font-family: "Cabin", sans-serif;
+}
+
 header {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+}
+
+.headp {
+    font-weight: 500;
+    font-size: 25px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 13vh;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
 }
 
 nav li {
     list-style: none;
+    padding: 0px 40px;
 }
 
 nav li a {
     text-decoration: none;
-    color: black;
+    transition: color 0.3s ease 0s;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.menu {
+    display: none;
+    color: white;
 }
 
 .profile-img {
-    border: 5px rgb(255, 113, 136) solid;
+    border: 8px rgb(82, 170, 79) solid;
     border-radius: 50%;
 }
 
 .main-con {
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.23);
+}
+
+.con-text {
+    padding: 0px 20px;
+}
+
+.main-con h2 {
+    text-decoration: underline;
+    color: rgb(23, 112, 22);
+}
+
+.main-con h3 {
+    margin-top: 7px;
+    text-decoration: underline;
+    color: rgb(42, 151, 118);
+    font-size: 20px;
+}
+
+.inner-con {
+    display: flex;
+    padding: 20px;
+}
+
+.block {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.block:hover {
+    opacity: 0.85;
+}
+
+.block a {
+    color: white;
+}
+
+.red {
+    background-color: rgb(177, 63, 63);
+}
+
+.blue {
+    background-color: rgb(160, 55, 151);
+}
+
+@media only screen and (max-width: 921px) {
+    nav li {
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    nav ul,
+    .cta {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
 }
